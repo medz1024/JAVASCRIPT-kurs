@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Vjezba 7</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="error"></p>
+	<p><input type="submit" name="promijeni" value="Promijeni ime" onclick="changeName()"></p>
+
+	<div id="charging" class="fa"></div>
+	<br>
+	
+	<input type="submit" value="Ispiši tekst" onclick="ispisiTekst()">
+	<p id="tekst"></p>
+
+	<p id="sijalica">
+	 	<img src="images/ugasena.gif">
+	</p>
+
+	<input type="submit" value="Upali svijetlo" onclick="upaliSijalicu()">
+	<input type="submit" value="Ugasi svijetlo" onclick="ugasiSijalicu()">
+
+	<br><br>
+
+	<form name="formOne" method="post">
+		<div class="form-group">
+			<label class="label-name">Ime</label>
+			<input id="ime" type="text" name="ime">
+			<span id="error_ime"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="label-name">Prezime</label>
+			<input id="prezime" type="text" name="prezime">
+			<span id="error_prezime"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="label-name">Datum rođenja</label>
+			<input id="dob" type="date" name="prezime">
+			<span id="error_dob"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="label-name">Email</label>
+			<input type="email" name="email" id="email">
+			<span id="error_email"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="label-name">Spol</label>
+			Muško <input type="radio" name="gender" id="male" value="Muško">
+			Žensko <input type="radio" name="gender" id="female" value="Žensko">
+			<span id="error_spol"></span>
+		</div>
+
+		<div class="form-group">
+			<label class="label-name">Kurs</label>
+			<select name="kurs" id="kurs">
+				<option value="HTML&CSS">HTML&CSS</option>
+				<option value="Javascript">Javascript</option>
+				<option value="PHP&MySQL">PHP&MySQL</option>
+				<option value="Wordrpess">Wordrpess</option>
+			</select>
+			<span id="error_kurs"></span>
+		</div>
+
+		<div id="kurs_da_ne" class="form-group">
+			<label class="label-name">Da li ste pohađali neki od kurseva u centru</label>
+			<label>DA <input type="checkbox" name="ckbox[]" value="Da"></label>
+			<label>NE <input type="checkbox" name="ckbox[]" value="Ne"></label>
+			<span id="error_kursdane"></span>
+		</div>
+
+		<input type="button" name="posalji" id="posalji" value="Pošalji" onclick="validateData()">
+		<input type="reset" value="Reset" name="Reset">
+	</form>
+	
+	<button id="getdata" onclick="getData()">Ispisi podatke</button>
+
+	<h2>Ispis forme</h2>
+	<p class="ime"></p>
+	<p class="prezime"></p>
+	<p class="dob"></p>
+	<p class="email"></p>
+	<p class="spol"></p>
+	<p class="kurs"></p>
+	<p class="kursdane"></p>
+		
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
