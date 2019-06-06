@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript - Zadaca br. 3 | Zadatak 1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h2>Zadatak 1</h2>
+	<table>
+		<tr>
+			<td>Rezultat:</td>
+			<td><input type="text" name="rezultat" style="height: 50px; font-weight: bold;"></td>
+		</tr>
+		<tr>
+			<td>Prvi broj:</td>
+			<td><input type="text" name="prvibroj"></td>
+		</tr>
+		<tr>
+			<td>Drugi broj:</td>
+			<td><input type="text" name="drugibroj"></td>
+		</tr>
+		<tr>
+			<td style="vertical-align: top;">Izaberite operaciju:</td>
+			<td style="vertical-align: top;">
+				<input type="radio" name="operacija" value="1" />Sabiranje 
+				<input type="radio" name="operacija" value="2" />Množenje
+				<div id="error_empty"></div>
+				<div id="error"></div>
+			</td>
+		</tr>
+		<tr>
+			<td><button type="button" name="izracunaj">Izračunaj</button></td>
+		</tr>
+	</table>
+	<script src="script.js"></script>
+</body>
+</html>
