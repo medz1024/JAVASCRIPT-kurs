@@ -1,0 +1,100 @@
+@font-face
+{
+	font-family: digital;
+	src:url(../font/digital.ttf);
+}
+body{
+	width: 70%;
+	margin: auto;
+}
+#clock
+{
+	font-size: 200px;
+	font-family: digital;
+	width: 900px;
+	margin:auto;
+	text-align: center;
+	color: cyan;
+}
+.slideshow-1{
+	position: relative;
+    text-align: center;
+    line-height: 0px;
+}
+#caption{
+	top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    margin: auto;
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+.slideshow img, .slideshow-1 img{
+	width: 100%;
+}
+.previous-image, .next-image{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0.7;
+    line-height: 0px;
+    bottom: initial;
+}
+.previous-image{
+	left: 5px;
+}
+.next-image{
+	right: 5px;
+}
+
+/*Accordion style*/
+#accordion{
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 21px;
+}
+.panel{
+	margin-bottom: 5px;
+	border: 1px solid #c70039;
+}    
+.header{
+	background-color: #c70039;
+	padding: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.3s ease-out;
+}
+.header:hover{
+	background-color: #900c3e;
+}
+.panel{
+	margin-bottom: 5px;
+}
+.body{
+	padding: 10px;
+}
+.body{
+	padding: 10px;
+	display: none;
+}
+#accordion .body p{
+	margin: 0px;
+}
+.show{
+	display: block;
+}
+.lista li, #demo-1, #demo-2{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraf-1{
+	display: none;
+}
+.prikazi{
+	display: block;
+}
